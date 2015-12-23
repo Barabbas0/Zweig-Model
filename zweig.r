@@ -95,4 +95,4 @@ scoring <- function() {
     return(bondIndex$score)
 }
 
-return(scoring())
+print(scoring())
