@@ -3,14 +3,17 @@ var webpack = require('webpack');
 
 module.exports = {
   devtool: 'source-map',
+  
   entry: [
     './src/entry'
   ],
+  
   output: {
     path: path.join(__dirname, 'public'),
     filename: 'bundle.js',
     publicPath: '/public/'
   },
+  
   plugins: [
     new webpack.optimize.DedupePlugin(),
     new webpack.optimize.UglifyJsPlugin({
@@ -20,9 +23,11 @@ module.exports = {
       }
     })
   ],
+  
   resolve: {
     extensions: ['', '.js', '.jsx']
   },
+  
   module: {
     loaders: [
       { test: /\.jsx$/,
