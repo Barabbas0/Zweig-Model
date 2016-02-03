@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "postinstall": "webpack --config ./webpack-prod.config.js --progress --colors",
+    "postinstall": "webpack --config ./webpack-production.config.js --progress --colors",
     "start": "node server.js"
   },
   "dependencies": {
