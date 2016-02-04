@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "postinstall": "webpack --config ./webpack-production.config.js --progress --display-error-details",
+    "postinstall": "webpack --config webpack-production.config.js --progress --display-error-details",
     "start": "node server.js"
   },
   "dependencies": {
