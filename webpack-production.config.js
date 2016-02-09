@@ -1,10 +1,14 @@
 var path = require('path');
 var webpack = require('webpack');
+var entryPath = path.join(__dirname, 'src/entry.js');
+console.log("entryPath:");
+console.log(entryPath);
+
 
 module.exports = {
   devtool: 'source-map',
   
-  entry: path.join(__dirname, 'src/entry.js'),
+  entry: entryPath,
   
   output: {
     path: path.join(__dirname, 'public'),
