@@ -3,6 +3,7 @@
     "postinstall": "webpack --config ./webpack-production.config.js --progress --display-error-details",
     "start": "node server.js"
   },
+  "engine": "node 0.10.38",
   "dependencies": {
     "babel": "^5.8.20",
     "babel-loader": "^5.3.2",
