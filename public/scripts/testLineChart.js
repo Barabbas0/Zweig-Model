@@ -1,3 +1,5 @@
+require("chartjs")();
+
 var randomScalingFactor = function() { return Math.round(Math.random()*100)};
 
 var lineChartData = {
