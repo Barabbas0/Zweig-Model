@@ -1,4 +1,4 @@
-require("chartjs")();
+<script src="https://cdnjs.com/libraries/chart.js"></script>
 
 var randomScalingFactor = function() { return Math.round(Math.random()*100)};
 
