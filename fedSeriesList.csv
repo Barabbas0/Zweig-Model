@@ -1,0 +1,12 @@
+DFF,Effective Federal Funds Rate,Fed Funds
+DGS1MO,1-Month Treasury Constant Maturity Rate,1 Month
+DGS3MO,3-Month Treasury Constant Maturity Rate,3 Month
+DGS6MO,6-Month Treasury Constant Maturity Rate,6 Month
+DGS1,1-Year Treasury Constant Maturity Rate,1 Year
+DGS2,2-Year Treasury Constant Maturity Rate,2 Year
+DGS3,3-Year Treasury Constant Maturity Rate,3 Year
+DGS5,5-Year Treasury Constant Maturity Rate,5 Year
+DGS7,7-Year Treasury Constant Maturity Rate,7 Year
+DGS10,10-Year Treasury Constant Maturity Rate,10 Year
+DGS20,20-Year Treasury Constant Maturity Rate,20 Year
+DGS30,30-Year Treasury Constant Maturity Rate,30 Year

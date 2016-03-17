@@ -1,27 +1,25 @@
-var randomScalingFactor = function() { return Math.round(Math.random()*100)};
+var Fred = require('fred-api');
+var apiKey = process.env.FRED_KEY;
+var fred = new Fred(apiKey);
+
+fred.getSeries({series_id: 'GNPCA'}, function(error, result) {
+    console.log(result)
+});
+
+//TODO: Populate labels and get data from fedSeriesList.csv
 
 var lineChartData = {
-	labels : ["January","February","March","April","May","June","July"],
+	labels : ["Fed Funds","1 Month","3 Month","6 Month","1 Year","2 Year","3 Year","5 Year","7 Year","10 Year","20 Year","30 Year"],
 		datasets : [
 		    {
-				label: "My First dataset",
+				label: "Treasury Curve",
 				fillColor : "rgba(220,220,220,0.2)",
 				strokeColor : "rgba(220,220,220,1)",
 				pointColor : "rgba(220,220,220,1)",
 				pointStrokeColor : "#fff",
 				pointHighlightFill : "#fff",
 				pointHighlightStroke : "rgba(220,220,220,1)",
-				data : [randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor()]
-			},
-			{
-				label: "My Second dataset",
-				fillColor : "rgba(151,187,205,0.2)",
-				strokeColor : "rgba(151,187,205,1)",
-				pointColor : "rgba(151,187,205,1)",
-				pointStrokeColor : "#fff",
-				pointHighlightFill : "#fff",
-				pointHighlightStroke : "rgba(151,187,205,1)",
-				data : [randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor()]
+				data : []
 			}
 		]
 	}
